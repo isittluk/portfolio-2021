@@ -1,0 +1,51 @@
+.nav {
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+
+    @include responsive(phone) {
+        margin-top: 1rem;
+        margin-bottom:9rem;
+    }
+
+    .container {
+        
+        .logo {
+            width: 60px;
+            height:60px;
+
+            @include responsive(phone) {
+                width: 45px;
+                height:45px;
+            }
+        }
+    }
+
+    .nav-items {
+        color: $color-lgrey;
+        font-size: 1.125rem;
+
+        @include responsive(phone) {
+            padding-top:8px;
+            font-size: 1rem;
+        }
+
+        .nav-item {
+            color: $color-lgrey;
+            text-decoration: none;
+            transition: all 0.5s;
+
+            &:hover {
+                color: $color-lgrey-hover;
+            }
+        }
+        .nav-active {
+            color: $color-primary;
+            transition: all 0.5s;
+
+            &:hover {
+                color: #144DD5;
+            }
+        }
+    }
+}
+

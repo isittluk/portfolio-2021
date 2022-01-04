@@ -1,0 +1,46 @@
+h1 {
+    font-family: $font-primary;
+    opacity: .86;
+
+    @include responsive(phone) {
+        font-size:2.15rem;
+        line-height:2.75rem;
+    }
+}
+
+h2 {
+    font-family: $font-primary;
+    opacity: .86;
+}
+
+h3 {
+
+}
+
+h4 {
+    font-family: $font-primary;
+    opacity: .86;
+    line-height: 2.25rem;
+}
+
+.span-bold {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color-lgrey;
+    padding: 0;
+}
+
+.image-description {
+    color: $color-lgrey;
+    @include responsive(phone) {
+        font-size: .75rem;
+    }
+}
+
+.pn-500 {
+    font-weight: 500;
+}
+
+.highlight {
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 40%, rgba(27, 93, 249, 0.15) 40%, rgba(27, 93, 249, 0.15) 100%);
+}

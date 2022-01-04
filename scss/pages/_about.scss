@@ -1,0 +1,53 @@
+.profile-img {
+    width: 75%;
+    height: 70%;
+    object-fit: cover;
+}
+.about-container {
+
+    .row {
+        @include responsive(phone) {
+            flex-direction:column;
+            margin-left: 0!important;
+            margin-right: 0!important;
+        }
+
+        .col {
+            @include responsive(phone) {
+                padding-left: 0!important;
+                padding-right: 0!important;
+            }
+        }
+
+        .col-about-1 {
+            @include responsive(phone) {
+                text-align: center;
+            }
+        }
+        .col-about-2 {
+            @include responsive(phone) {
+
+            }
+        }
+
+        img {
+            @include responsive(phone) {
+                margin-left: 0 !important;
+                margin-bottom:3rem;
+            }
+        }
+
+        .profile-img {
+            @include responsive(phone) {
+                width: 100% !important;
+            }
+        }
+
+        h1 {
+            @include responsive(phone) {
+                margin-left: 0 !important;
+                font-size: 3rem !important;
+            }
+        }
+    }
+}

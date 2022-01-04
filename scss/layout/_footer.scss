@@ -1,0 +1,29 @@
+.next-portfolio-image {
+    width: 75px;
+    height: 75px;
+    margin-right: 2rem;
+}
+
+footer {
+    .container {
+        @include responsive(phone) {
+            flex-direction:column;
+            padding: 0;
+        }
+
+        .container-sm {
+            @include responsive(phone) {
+                text-align:center;
+                padding: 0;
+                margin-bottom:1.5rem;
+            }
+        }
+
+        .container {
+            @include responsive(phone) {
+                text-align: center !important;
+                padding: 0;
+            }
+        }
+    }
+}

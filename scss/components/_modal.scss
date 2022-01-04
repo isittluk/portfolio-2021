@@ -1,0 +1,52 @@
+.modal-backdrop {
+    background-color: white;
+    opacity: .90 !important;
+ }
+
+ .modal-header {
+     border-bottom: none;
+     padding: 0;
+ }
+
+ .modal-content {
+    width: 65vw;
+    transform: translate(25%,6%);
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+ }
+
+ .close {
+     display: flex;
+     align-items: center;
+     font-size: 2rem;
+     color: black;
+     opacity: .75;
+
+     position: absolute;
+     top: 2%;
+     right: 2%;
+     z-index: 9999;
+
+     transition: color .5s;
+
+     &:hover {
+         color: rgba(0,0,0,0.5);
+     }
+
+     &:before {
+        content: 'close';
+        font-size:14px;
+        padding-right: .25rem;
+     }
+     
+ }
+
+ .display-image {
+     transition: all .5s;
+     &:hover {
+        cursor: zoom-in;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+     }
+     
+ }
